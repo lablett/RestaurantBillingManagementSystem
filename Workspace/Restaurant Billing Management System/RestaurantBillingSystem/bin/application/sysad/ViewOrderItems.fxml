@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bpOrderItems" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sysad.ViewOrderItemsController">
+   <center>
+      <AnchorPane fx:id="ancOrderItems" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnClose" layoutX="215.0" layoutY="258.0" mnemonicParsing="false" onAction="#closeStage" prefHeight="35.0" prefWidth="100.0" text="Close" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="125.0" />
+            <TableView fx:id="tblViewItems" layoutX="21.0" layoutY="17.0" prefHeight="222.0" prefWidth="463.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+              <columns>
+                <TableColumn fx:id="colItem" prefWidth="196.99996948242188" text="Item" />
+                <TableColumn fx:id="colQuantity" prefWidth="126.3333740234375" text="Quantity" />
+                  <TableColumn fx:id="colTotal" prefWidth="138.6666259765625" text="Total (£)" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnExportItems" layoutX="100.0" layoutY="258.0" mnemonicParsing="false" onAction="#exportOrderItems" prefHeight="35.0" prefWidth="100.0" text="Export Order" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="275.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

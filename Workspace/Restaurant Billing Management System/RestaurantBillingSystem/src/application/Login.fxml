@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancLogin" prefHeight="440.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Button fx:id="btnLogin" layoutX="286.0" layoutY="345.0" mnemonicParsing="false" onAction="#Login" text="Login" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtUsername" layoutX="208.0" layoutY="182.0" onKeyPressed="#handleEnterPressed" promptText="Username" AnchorPane.leftAnchor="208.0" AnchorPane.topAnchor="182.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="208.0" layoutY="241.0" onKeyPressed="#handleEnterPressed" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="lblStatus" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="296.0" prefHeight="39.0" prefWidth="430.0" text="  " textAlignment="CENTER" textFill="#c70d0d" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="14.0" text="Welcome to " textFill="#d85a1e">
+         <font>
+            <Font name="AR DESTINE" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="70.0" rotate="-16.9" text="[Insert Name Here]" textFill="#d85a1e">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
